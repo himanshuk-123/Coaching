@@ -26,7 +26,7 @@ export default function Navbar() {
             ['/', 'Home'],
             ['/courses', 'Courses'],
             ['/results', 'Results'],
-            ['/faculty', 'Faculty'],
+            // ['/faculty', 'Faculty'],
             ['/gallery', 'Gallery'],
             ['/contact', 'Contact'],
           ].map(([href, label]) => (
