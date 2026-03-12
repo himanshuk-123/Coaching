@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { useState, FormEvent } from 'react'
 
-const APPS_SCRIPT_URL = 'YOUR_APPS_SCRIPT_URL'
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzKKtlxkQ3FsxxzqcPIGBeKkZ9ZzszdodGqlg1R-R_rkbnTWSljSj0zUjZio27u045zWw/exec'
 const WHATSAPP_NUMBER = '918468087211'
 
 export default function Contact() {
