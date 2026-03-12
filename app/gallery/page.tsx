@@ -118,7 +118,7 @@ export default function Gallery() {
               ke liye bhi welcome kiya jaata hai — anytime during OPD hours.
             </p>
             <a           
-              href="https://wa.me/919999999999?text=Hello,%20I%20want%20to%20visit%20the%20coaching%20center"
+              href="https://wa.me/918468087211?text=Hello,%20I%20want%20to%20visit%20the%20coaching%20center"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-4 bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-lg text-sm font-semibold transition-colors"
@@ -135,7 +135,7 @@ export default function Gallery() {
         <p className="text-orange-100 mt-2">Free demo class book karo — personally aao aur dekho</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
           <a
-            href="https://wa.me/919999999999?text=Hello,%20I%20want%20to%20book%20a%20free%20demo%20class"
+            href="https://wa.me/918468087211?text=Hello,%20I%20want%20to%20book%20a%20free%20demo%20class"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white text-orange-500 px-8 py-3 rounded-xl font-bold hover:bg-orange-50 transition-colors"

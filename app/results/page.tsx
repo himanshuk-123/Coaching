@@ -139,7 +139,7 @@ export default function Results() {
         <p className="text-orange-100 mt-2">Abhi admission lo — limited seats hain</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
           <a
-            href="https://wa.me/919999999999?text=Hello,%20I%20want%20to%20book%20a%20free%20demo%20class"
+            href="https://wa.me/918468087211?text=Hello,%20I%20want%20to%20book%20a%20free%20demo%20class"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white text-orange-500 px-8 py-3 rounded-xl font-bold hover:bg-orange-50 transition-colors"

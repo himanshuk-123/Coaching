@@ -78,7 +78,7 @@ export default function Courses() {
                 <div className="mt-4 flex items-center justify-between">
                   <span className="text-orange-500 font-bold text-xl">{course.fee}</span>
                   <a
-                    href="https://wa.me/919999999999?text=Hello,%20I%20want%20to%20enquire%20about%20Class%2010th%20admission"
+                    href="https://wa.me/918468087211?text=Hello,%20I%20want%20to%20enquire%20about%20Class%2010th%20admission"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-xl text-sm font-semibold transition-colors"
@@ -151,7 +151,7 @@ export default function Courses() {
                 <div className="mt-4 flex items-center justify-between">
                   <span className="text-orange-500 font-bold text-xl">{course.fee}</span>
                   <a
-                    href="https://wa.me/919999999999?text=Hello,%20I%20want%20to%20enquire%20about%20Class%2012th%20admission"
+                    href="https://wa.me/918468087211?text=Hello,%20I%20want%20to%20enquire%20about%20Class%2012th%20admission"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-xl text-sm font-semibold transition-colors"
@@ -230,7 +230,7 @@ export default function Courses() {
         <p className="text-orange-100 mt-2">Free demo class book karo — pehle dekho phir decide karo</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
           <a
-            href="https://wa.me/919999999999?text=Hello,%20I%20want%20to%20book%20a%20free%20demo%20class"
+            href="https://wa.me/918468087211?text=Hello,%20I%20want%20to%20book%20a%20free%20demo%20class"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white text-orange-500 px-8 py-3 rounded-xl font-bold hover:bg-orange-50 transition-colors"

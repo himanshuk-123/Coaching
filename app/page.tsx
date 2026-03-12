@@ -38,7 +38,7 @@ export default function Home() {
 
             <div className="flex flex-col sm:flex-row gap-3 mt-8">
             <a  
-                href="https://wa.me/919999999999?text=Hello,%20I%20want%20to%20book%20a%20free%20demo%20class"
+                href="https://wa.me/918468087211?text=Hello,%20I%20want%20to%20book%20a%20free%20demo%20class"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-xl font-semibold text-center transition-colors"
@@ -73,7 +73,7 @@ export default function Home() {
                 </div>
               ))}
               <a
-                href="https://wa.me/919999999999?text=Hello,%20I%20want%20to%20enquire%20about%20admission"
+                href="https://wa.me/918468087211?text=Hello,%20I%20want%20to%20enquire%20about%20admission"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block mt-4 bg-orange-500 hover:bg-orange-600 text-white text-center py-3 rounded-xl text-sm font-semibold transition-colors"
@@ -228,7 +228,7 @@ export default function Home() {
         <p className="text-orange-100 mt-2 text-lg">Free demo class book karo aaj — koi commitment nahi</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
           <a
-            href="https://wa.me/919999999999?text=Hello,%20I%20want%20to%20book%20a%20free%20demo%20class"
+            href="https://wa.me/918468087211?text=Hello,%20I%20want%20to%20book%20a%20free%20demo%20class"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white text-orange-500 px-8 py-3 rounded-xl font-bold hover:bg-orange-50 transition-colors"

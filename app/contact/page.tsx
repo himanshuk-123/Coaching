@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useState, FormEvent } from 'react'
 
 const APPS_SCRIPT_URL = 'YOUR_APPS_SCRIPT_URL'
-const WHATSAPP_NUMBER = '919999999999'
+const WHATSAPP_NUMBER = '918468087211'
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -88,7 +88,7 @@ export default function Contact() {
                 title: 'Call Us',
                 desc: 'Mon–Sat, 8am–7pm',
                 action: '+91 99999 99999',
-                href: 'tel:+919999999999',
+                href: 'tel:+918468087211',
                 color: 'bg-orange-500 hover:bg-orange-600',
                 external: false,
               },

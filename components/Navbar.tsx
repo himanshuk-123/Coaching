@@ -42,7 +42,7 @@ export default function Navbar() {
 
         {/* CTA */}
         <a
-          href="https://wa.me/919999999999?text=Hello,%20I%20want%20to%20enquire%20about%20admission"
+          href="https://wa.me/918468087211?text=Hello,%20I%20want%20to%20enquire%20about%20admission"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:flex items-center gap-2 bg-orange-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-orange-600 transition-colors"
@@ -77,7 +77,7 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href="https://wa.me/919999999999"
+            href="https://wa.me/918468087211"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-orange-500 text-white px-4 py-2 rounded-lg text-sm font-medium text-center"
