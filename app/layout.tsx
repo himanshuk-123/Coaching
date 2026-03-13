@@ -10,6 +10,11 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Promod Srivastava English Classes | Balrampur',
   description: 'English coaching by Promod Srivastava. Grammar, writing, spoken English, and board exam preparation for school students.',
+  icons: {
+    icon: '/promod-sir.jpeg',
+    shortcut: '/promod-sir.jpeg',
+    apple: '/promod-sir.jpeg',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
