@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 const whatsappLink = 'https://wa.me/919838184568?text=Hello,%20I%20want%20to%20join%20English%20coaching'
 
@@ -7,7 +8,7 @@ export default function Home() {
     <div className="min-h-screen">
       <section className="bg-gradient-to-br from-orange-50 to-white py-20 px-4">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          <div>
+          <div className="animate-rise">
             <span className="bg-orange-100 text-orange-700 text-xs font-semibold px-3 py-1 rounded-full">
               English Subject Focused Coaching
             </span>
@@ -38,20 +39,33 @@ export default function Home() {
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-xl font-semibold text-center transition-colors"
+                className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-xl font-semibold text-center transition-colors btn-pop"
               >
                 Book Free Demo Class
               </a>
               <a
                 href="tel:+919838184568"
-                className="border border-orange-500 text-orange-600 hover:bg-orange-50 px-6 py-3 rounded-xl font-semibold text-center transition-colors"
+                className="border border-orange-500 text-orange-600 hover:bg-orange-50 px-6 py-3 rounded-xl font-semibold text-center transition-colors btn-pop"
               >
                 Call 9838184568
               </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl border border-slate-100 shadow-lg p-6">
+          <div className="bg-white rounded-2xl border border-slate-100 shadow-lg p-6 animate-rise animate-delay-2 hover-lift">
+            <div className="flex items-center gap-3 pb-4 border-b border-slate-100">
+              <Image
+                src="/promod-sir.jpeg"
+                alt="Promod Srivastava"
+                width={56}
+                height={56}
+                className="rounded-xl object-cover border border-slate-200"
+              />
+              <div>
+                <p className="font-semibold text-slate-800">Promod Srivastava</p>
+                <p className="text-xs text-slate-500">English Teacher</p>
+              </div>
+            </div>
             <h2 className="text-lg font-semibold text-slate-800">What You Get</h2>
             <div className="mt-4 space-y-3 text-sm text-slate-600">
               <p>1. Daily grammar and writing practice</p>
@@ -64,7 +78,7 @@ export default function Home() {
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="block mt-6 bg-slate-800 hover:bg-slate-900 text-white text-center py-3 rounded-xl text-sm font-semibold transition-colors"
+              className="block mt-6 bg-slate-800 hover:bg-slate-900 text-white text-center py-3 rounded-xl text-sm font-semibold transition-colors btn-pop"
             >
               Enquire on WhatsApp
             </a>
@@ -81,10 +95,50 @@ export default function Home() {
               { title: 'English Only Focus', desc: 'Complete subject depth without distraction.' },
               { title: 'Small Batches', desc: 'Better personal attention and tracking.' },
               { title: 'Regular Tests', desc: 'Continuous practice for marks improvement.' },
-            ].map((item) => (
-              <div key={item.title} className="bg-slate-50 border border-slate-100 rounded-xl p-5">
+            ].map((item, index) => (
+              <div
+                key={item.title}
+                className="bg-slate-50 border border-slate-100 rounded-xl p-5 hover-lift animate-rise"
+                style={{ animationDelay: `${index * 90}ms` }}
+              >
                 <h3 className="font-semibold text-slate-800">{item.title}</h3>
                 <p className="text-sm text-slate-500 mt-2">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 px-4 bg-slate-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-center justify-between gap-4 flex-wrap">
+            <div>
+              <h2 className="text-3xl font-bold text-slate-800">Results and Achievements</h2>
+              <p className="text-slate-500 mt-2">Promod sir ke students ki progress highlights.</p>
+            </div>
+            <Link
+              href="/results"
+              className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2.5 rounded-lg font-semibold text-sm btn-pop"
+            >
+              View All Results
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 mt-8">
+            {[
+              { title: 'Board Marks Boost', value: '90%+', note: 'Multiple students reached 90+ range.' },
+              { title: 'Grammar Accuracy', value: 'Strong', note: 'Regular test corrections improved basics.' },
+              { title: 'Writing Skills', value: 'Improved', note: 'Structured format practice helped scoring.' },
+              { title: 'Speaking Confidence', value: 'High', note: 'Weekly speaking drills built confidence.' },
+            ].map((item, index) => (
+              <div
+                key={item.title}
+                className="bg-white border border-slate-100 rounded-xl p-5 hover-lift animate-rise"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <p className="text-xs text-slate-400">{item.title}</p>
+                <p className="text-2xl font-bold text-orange-500 mt-1">{item.value}</p>
+                <p className="text-sm text-slate-500 mt-2">{item.note}</p>
               </div>
             ))}
           </div>
@@ -99,13 +153,13 @@ export default function Home() {
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white text-orange-600 px-8 py-3 rounded-xl font-bold hover:bg-orange-50 transition-colors"
+            className="bg-white text-orange-600 px-8 py-3 rounded-xl font-bold hover:bg-orange-50 transition-colors btn-pop"
           >
             WhatsApp Now
           </a>
           <Link
             href="/courses"
-            className="border border-white text-white px-8 py-3 rounded-xl font-semibold hover:bg-orange-600 transition-colors"
+            className="border border-white text-white px-8 py-3 rounded-xl font-semibold hover:bg-orange-600 transition-colors btn-pop"
           >
             View Course Options
           </Link>

@@ -36,6 +36,31 @@ export default function Results() {
         </div>
       </section>
 
+      <section className="py-16 px-4 bg-white border-t border-slate-100">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-slate-800 text-center">Student Achievements</h2>
+          <p className="text-slate-500 text-center mt-2">Recent outstanding performance by Promod sir's students in English.</p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
+            {[
+              { name: 'Priya Sharma', score: '98/100', item: 'Class 12 English Board', note: 'Top score in writing and literature section' },
+              { name: 'Rahul Gupta', score: '97/100', item: 'Class 10 English Board', note: 'Excellent grammar and answer structure' },
+              { name: 'Anjali Verma', score: '96/100', item: 'Class 12 English Board', note: 'Strong comprehension and presentation skills' },
+              { name: 'Amit Kumar', score: '95/100', item: 'Class 10 English Board', note: 'Major improvement in long answer writing' },
+              { name: 'Neha Singh', score: '94/100', item: 'Class 12 English Board', note: 'Consistent high performance in class tests' },
+              { name: 'Karan Agarwal', score: '93/100', item: 'Class 10 English Board', note: 'High marks in grammar and unseen passage' },
+            ].map((student) => (
+              <div key={`${student.name}-${student.item}`} className="bg-slate-50 border border-slate-100 rounded-xl p-5">
+                <p className="text-sm text-slate-500">{student.item}</p>
+                <h3 className="text-lg font-bold text-slate-800 mt-1">{student.name}</h3>
+                <p className="text-2xl font-bold text-orange-500 mt-2">{student.score}</p>
+                <p className="text-sm text-slate-500 mt-2">{student.note}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-12 px-4 bg-orange-500 text-center text-white">
         <h2 className="text-3xl font-bold">Want Similar Improvement?</h2>
         <p className="text-orange-100 mt-2">Take a demo class and discuss your current level.</p>

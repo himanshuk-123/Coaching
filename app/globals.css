@@ -24,3 +24,106 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes navIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes softPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.35);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(249, 115, 22, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(249, 115, 22, 0);
+  }
+}
+
+.animate-rise {
+  animation: riseIn 0.7s ease both;
+}
+
+.animate-nav {
+  animation: navIn 0.45s ease both;
+}
+
+.animate-delay-1 {
+  animation-delay: 0.12s;
+}
+
+.animate-delay-2 {
+  animation-delay: 0.24s;
+}
+
+.hover-lift {
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.08);
+}
+
+.btn-pop {
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.btn-pop:hover {
+  transform: translateY(-2px) scale(1.01);
+}
+
+.btn-pop:active {
+  transform: scale(0.97);
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .btn-pop {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  .btn-pop:active {
+    transform: scale(0.96);
+  }
+}
+
+.soft-pulse {
+  animation: softPulse 2.6s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-rise,
+  .animate-nav,
+  .soft-pulse {
+    animation: none !important;
+  }
+
+  .hover-lift,
+  .btn-pop {
+    transition: none !important;
+  }
+
+  .btn-pop:active {
+    transform: none !important;
+  }
+}
