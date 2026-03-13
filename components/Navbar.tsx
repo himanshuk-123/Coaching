@@ -4,6 +4,7 @@ import Link from 'next/link'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
+  const whatsappLink = 'https://wa.me/919838184568?text=Hello,%20I%20want%20to%20enquire%20about%20English%20classes'
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-white shadow-sm border-b border-slate-100">
@@ -12,11 +13,11 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <div className="w-9 h-9 bg-orange-500 rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-sm">A+</span>
+            <span className="text-white font-bold text-sm">EN</span>
           </div>
           <div>
-            <p className="font-bold text-slate-800 text-sm leading-none">Sharma Classes</p>
-            <p className="text-xs text-slate-400">Board Exam Specialists</p>
+            <p className="font-bold text-slate-800 text-sm leading-none">Promod Srivastava</p>
+            <p className="text-xs text-slate-400">English Coaching Classes</p>
           </div>
         </Link>
 
@@ -25,8 +26,6 @@ export default function Navbar() {
           {[
             ['/', 'Home'],
             ['/courses', 'Courses'],
-            ['/results', 'Results'],
-            // ['/faculty', 'Faculty'],
             ['/gallery', 'Gallery'],
             ['/contact', 'Contact'],
           ].map(([href, label]) => (
@@ -42,12 +41,12 @@ export default function Navbar() {
 
         {/* CTA */}
         <a
-          href="https://wa.me/918468087211?text=Hello,%20I%20want%20to%20enquire%20about%20admission"
+          href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:flex items-center gap-2 bg-orange-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-orange-600 transition-colors"
         >
-          📋 Free Demo Class
+          📞 Call: 9838184568
         </a>
 
         {/* Mobile Toggle */}
@@ -62,8 +61,6 @@ export default function Navbar() {
           {[
             ['/', 'Home'],
             ['/courses', 'Courses'],
-            ['/results', 'Results'],
-            ['/faculty', 'Faculty'],
             ['/gallery', 'Gallery'],
             ['/contact', 'Contact'],
           ].map(([href, label]) => (
@@ -77,12 +74,12 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href="https://wa.me/918468087211"
+            href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-orange-500 text-white px-4 py-2 rounded-lg text-sm font-medium text-center"
           >
-            📋 Free Demo Class
+            📞 9838184568
           </a>
         </div>
       )}

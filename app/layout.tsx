@@ -8,8 +8,8 @@ import WhatsAppButton from '@/components/WhatsAppButton'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Sharma Classes | Board Exam Coaching - Kanpur',
-  description: '10th & 12th Board Exam coaching in Kanpur. Expert faculty, proven results. Book free demo class today.',
+  title: 'Promod Srivastava English Classes | Balrampur',
+  description: 'English coaching by Promod Srivastava. Grammar, writing, spoken English, and board exam preparation for school students.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
